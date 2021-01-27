@@ -2,5 +2,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    Text-align: center;
+    border-radius: 2px; 
+    color: darkslategrey;
+}
+
+h1 {
+    color: white;
 }
     
