@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Pokedex from './Pokedex'
 
 class Pokegame extends Component {
 
@@ -18,15 +19,18 @@ class Pokegame extends Component {
     render() {
         let hand1= [];
         let hand2 = [ ...this.props.pokemon ];
-        while (hand1.length < hand2.lengh){
-            let randIdx = Math.floor(Math.random() * hand2.lenghth);
+        while (hand1.length < hand2.length){
+            let randIdx = Math.floor(Math.random() * hand2.length);
             let randPokemon = hand2.splice(randIdx, 1) [0];
             hand1.push(randPokemon);
         }
-        console.log(hand1);
-        console.log(hand2);
+
         return (
-            <div>Pokegame</div>
+            <div>
+                <h1>Pokegame</h1>
+                <Pokedex pokemon={hand1}/>
+                <Pokedex Pkemon={hand2} />
+            </div>
         );
     }
 }
