@@ -16,3 +16,19 @@
 .Pokecard-data {
     
 }
+.Pokecard-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color:rgb(185, 185, 185);
+    border-radius: 3px;
+    margin-bottom: 1rm;
+}
+.Pokecard img {
+    transition: all ease 500ms;
+}
+.Pokecard img:hover {
+    transform: scale(1.25);
+    opacity: 0.7;
+}
