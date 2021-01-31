@@ -11,3 +11,9 @@ h1 {
     color: white;
 }
     
+.Pokedex-winner {
+    color:firebrick
+}
+.Pokedex-loser {
+    color:green
+}
